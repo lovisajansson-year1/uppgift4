@@ -4,9 +4,7 @@ public class Bankkonto {
 
 	private String nbr;
 	private double balance;
-	private double credit;
-	private double withdraw;
-
+	
 	public String getNbr() {
 		return nbr;
 	}
@@ -19,11 +17,11 @@ public class Bankkonto {
 	public void setBalance(double newBalance) {
 		balance = newBalance;
 	}
-	public void credit(double amount) {
-		balance += amount;
+	public void credit(double amount) { //metoden ökar värdet på balance
+		balance += amount; 
 	}
 		
-	public void withdraw(double amount) {
+	public void withdraw(double amount) { //metoden minskar värdet på balance
 		balance -= amount;
 	}
 	
